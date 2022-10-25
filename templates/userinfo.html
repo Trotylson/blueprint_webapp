@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+  <title>MyFirstWeb - User Info Page</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="container text-center" style="margin-top:10%">
+
+  <h1>User {{ user }}</h1>
+  <h4><b>user status:</b> {{ active_status }}</h4>
+  <h4><b>admin:</b> {{ is_admin }}</h4>
+</div>
+
+{% endblock %}

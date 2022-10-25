@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}
+  <title>MyFirstWeb - Home Page</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="container p-3">
+  {% for error in errors %}
+  <div class="alert alert-danger" role="alert">
+    {{ error }}
+  </div>
+  {% endfor %}
+
+</div>
+
+<div class="container" style="text-align:center; margin-top:10%">
+  <h4>Welcom to my first full WebApp blueprint :)</h4>
+</div>
+
+{% endblock %}

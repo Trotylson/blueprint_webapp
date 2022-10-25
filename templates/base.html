@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {% block title %}
+  <title>MyFirstWeb</title>
+  {% endblock %}
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- scripts -->
+  <link rel="stylesheet" href="/css/index.css" class="stylesheet">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+    <ul class="nav justify-content-center" style="background:black">
+        <li class="nav-item">
+          <a class="nav-link" style="color:rgb(42, 209, 42)" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:rgb(42, 209, 42)" href="/login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:rgb(42, 209, 42)" href="/register">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:rgb(42, 209, 42)" href="/userinfo">User info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:rgb(42, 209, 42)" href="/docs">OpenAPI</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:rgb(42, 209, 42)" href="/redoc">Redoc</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li> -->
+      </ul>
+    <!-- <div class="p-2"> <h1>.: MyFirstWebApp :.</h1></div> -->
+  </header>
+
+  {% block content %}
+  <main>
+
+  </main>
+  {% endblock %}
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  {% block script %}
+  {% endblock %}
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
